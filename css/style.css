@@ -4856,6 +4856,7 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  z-index: 999999999;
 }
 
 .navbar>.container,
@@ -12172,6 +12173,21 @@ h5,
     background-position: center center !important;
   }
 }
+#home-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+#home-section .slider-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adicione uma cor de sobreposição para a imagem de fundo */
+}
+
 
 .owl-carousel.home-slider .slider-item .overlay {
   position: absolute;
@@ -13079,10 +13095,6 @@ textarea.form-control {
   font-size: 24px;
 }
 
-.ftco-section .card {
-  margin-right: auto;
-  margin-left: auto;
-}
 
 .ftco-section {
   padding: 7em 0;
