@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Awaiken Theme">
+	<!-- Page Title -->
+	<title>JG Developer | Construindo Seu Futuro Digital</title>
+	<!-- Google Fonts css-->
+	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash%7CRoboto:300,400,400i,500,500i,700,700i,900" rel="stylesheet">
+	<!-- Bootstrap css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<!-- Font Awesome icon css-->
+	<link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<link href="css/flaticon.css" rel="stylesheet" media="screen">
+	<!-- Swiper's CSS -->
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<!-- Animated css -->
+	<link href="css/animate.css" rel="stylesheet">
+	<!-- Magnific Popup CSS -->
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<!-- Animation Headline CSS -->
+	<link href="css/animation-headline.css" rel="stylesheet">
+	<!-- Slick nav css -->
+	<link rel="stylesheet" href="css/slicknav.css">
+	<!-- Main custom css -->
+	<link href="css/custom.css" rel="stylesheet" media="screen">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<style>
+		/* Estilos para dispositivos com tela menor que 768px (por exemplo, celulares) */
+@media (max-width: 768px) {
+	body {
+		font-size: 14px; /* Reduzindo o tamanho da fonte para dispositivos móveis */
+		background-position-x: 50%; /* Movendo a imagem de fundo um pouco para a direita */
+	}
+}
+
+	</style>
+</head>
+		<body data-spy="scroll" data-target="#main-navbar" data-offset="75" style="		background-image:url(images/bg-about.png);">
+	<div>
+		<div>
+		<div class="whatsapp-main">
+		<div type="floating" class="whatsapp-wrapper hide-whatsapp" style="width: 360px;">
+		<div color="rgb(29, 33, 41)" role="button" tabindex="0" class="close_whatsapp"></div>
+		<div class="whatsapp-header">
+		<div size="52" class="support-avatar">
+		<div class="avatar-wrapper">
+		<div class="avatar-img" style="  min-width: 100%;
+		height: 100%;
+		flex-shrink: 0;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-image: url(images/image-whatsapp.png);"></div>
+		</div>
+		</div>
+		<div class="header-info">
+		<div class="whatsapp-name">JG Developer</div>
+		<div class="whatsapp-reply-time" style="font-size: 15px;color: gray;">Desenvolvimento Web</div>
+		</div>
+		</div>
+		<div class="whatsapp-background">
+		<div class="whatsapp-message-container">
+		<div class="loading-animation">
+		<div class="dot-pulse"></div>
+		</div>
+		<div class="whatsapp-message-wrapper">
+		<div class="chat-body-wrapper">
+		<div class="whatsapp-chat-name">João Guilherme</div>
+		<div class="whatsapp-chat-message">
+			<p>Olá! 👋</p><br>
+			<p>Estou aqui para transformar suas ideias em realidade digital e encontrar a melhor solução para você! 🤓</p>
+
+		</div>
+		
+		<div class="whatsapp-chat-time" id="current-time"></div>
+
+		<script>
+			// Obtém a referência para o elemento onde queremos mostrar a hora atual
+			var chatTimeElement = document.getElementById('current-time');
+		
+			// Obtém a hora atual
+			var now = new Date();
+			var hours = now.getHours();
+			var minutes = now.getMinutes();
+		
+			// Formata a hora e os minutos para garantir que tenham dois dígitos
+			var formattedHours = hours < 10 ? '0' + hours : hours;
+			var formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
+		
+			// Exibe a hora atual no formato HH:MM
+			chatTimeElement.textContent = formattedHours + ':' + formattedMinutes;
+		</script>
+		
+		</div>
+		</div>
+		</div>
+		</div>
+		<a role="button" href="https://wa.me/5537999066606" title="WhatsApp" class="whatsapp-btn">
+		<svg class="whatsapp-send-icon-small" xmlns="http://www.w3.org/2000/svg" version="1" height="20" viewBox="0 0 90 90">
+		<path d="M90 44a44 44 0 0 1-66 38L0 90l8-24A44 44 0 0 1 46 0c24 0 44 20 44 44zM46 7C25 7 9 24 9 44c0 8 2 15 7 21l-5 14 14-4a37 37 0 0 0 58-31C83 24 66 7 46 7zm22 47l-2-1-7-4-3 1-3 4h-3c-1 0-4-1-8-5-3-3-6-6-6-8v-2l2-2 1-1v-2l-4-8c0-2-1-2-2-2h-2l-3 1c-1 1-4 4-4 9s4 11 5 11c0 1 7 12 18 16 11 5 11 3 13 3s7-2 7-5l1-5z" fill="#FFF" />
+		</svg>
+		<span class="chat-button-text">Iniciar Chat</span>
+		</a>
+		<div style="display: flex; justify-content: center; align-items: center;"></div>
+		</div>
+		<div class="whatsapp-popup-button" id="whatsapp-popup">
+		<div class="whatsapp-notify"></div>
+		<div class="whatsapp-button-main">
+		<svg class="whatsapp-send-icon-big" xmlns="http://www.w3.org/2000/svg" version="1" width="32" height="32" viewBox="0 0 90 90">
+		<path d="M90 44a44 44 0 0 1-66 38L0 90l8-24A44 44 0 0 1 46 0c24 0 44 20 44 44zM46 7C25 7 9 24 9 44c0 8 2 15 7 21l-5 14 14-4a37 37 0 0 0 58-31C83 24 66 7 46 7zm22 47l-2-1-7-4-3 1-3 4h-3c-1 0-4-1-8-5-3-3-6-6-6-8v-2l2-2 1-1v-2l-4-8c0-2-1-2-2-2h-2l-3 1c-1 1-4 4-4 9s4 11 5 11c0 1 7 12 18 16 11 5 11 3 13 3s7-2 7-5l1-5z" fill="#FFF" />
+		</svg>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>	
+
+	<!-- Preloader starts -->
+	<div class="preloader">
+		<div class="loader">
+			<div class="diamond"></div>
+			<div class="diamond"></div>
+			<div class="diamond"></div>
+		</div>
+	</div>
+	<!-- Preloader Ends -->
+	
+	<!-- Header Section Start -->
+	<header class="header">
+		<nav class="navbar navbar-expand-md navbar-light fixed-top" id="main-navbar">
+			<div class="container">
+				<!-- Navbar Brand start -->
+				<a class="navbar-brand" href="#">
+					<img src="images/logo-colorida.png" style="height: 120px;" alt="">
+				</a>
+				<!-- Navbar Brand end -->
+				
+				<!-- Navigation Starts -->
+				<ul class="navbar-nav ml-auto" id="main-menu">
+					<li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+					<li class="nav-item"><a class="nav-link" href="#services">Serviços</a></li>
+					<li class="nav-item"><a class="nav-link" href="#portfolio">Modelos</a></li>
+					<li class="nav-item"><a class="" style="background-color: var(--verde-color);color: black;border-radius: 15px;padding: 15px;width: 250px;font-size: 20px;text-transform: uppercase;font-weight: bold;" href="#contact">Contato</a></li>
+				</ul>
+				<!-- Navigation Ends -->				
+				
+				<div class="navbar-toggle"></div>
+				<div id="responsive-menu"></div>
+			</div>
+		</nav>	
+	</header>
+	<!-- Header Section End -->
+	
+	<!-- Banner Slider Section starts -->
+	<!-- style="background-image: url(images/bg.png);" -->
+	<div class="banner" id="home" >
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<!-- Banner Content Start -->
+					<div class="banner-content">
+						<h2 class="cd-headline clip">
+							<span class="before-heading" >Construindo Seu Sucesso Digital</span>
+							<span style="font-size: 22px;font-family: 'Poppins';font-weight: bold;">Elevando seu negocio para outro nivel!</span>
+						</h2>
+						<!-- <p>Desbloquei Seu Potencial Digital</p> -->
+						<div class="d-block mt-3">
+						<a href="#" class="btn-start">Comece agora</a><br>
+						<!-- <a href="#" class="btn-sub-home">Ver Modelos</a> -->
+					</div>
+					</div>
+					<!-- Banner Content End -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Banner Slider Section ends -->
+	
+	<!-- About us Section Starts -->
+	<section class="about-us" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Section title start -->
+					<div class="section-title">
+						<h2>Sobre Nós</h2>
+						<!-- <p>Professional Profile - There Is All About Me</p> -->
+					</div>
+					<!-- Section title end -->
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-4">
+					<!-- About image start -->
+					<div class="about-image wow fadeInLeft" style="border: none;" data-wow-delay="0.3s">
+						<img src="images/about.jpg" alt="" />
+					</div>
+					<!-- About image end -->
+				</div>
+				
+				<div class="col-lg-8">
+					<!-- About Content start -->
+					<div class="about-content wow fadeInUp" data-wow-delay="0.8s">
+						
+						<h3>Somos desenvolvedores web apaixonados pela arte de criar experiências digitais envolventes e funcionais. Com uma sólida formação em tecnologia da informação e anos de experiência prática.</h3>
+						
+						
+						<ul class="text-light">
+							<li style="padding: 5px;border: 1px dotted gray;"> <h5><b >Nome:</b> <br>JG Developer <br></h5> </li>
+							<li style="padding: 5px;border: 1px dotted gray;"> <h5><b>Telefone:</b><br> 037 9 9906-6606</h5> </li>
+							<li style="padding: 5px;border: 1px dotted gray;"> <h5><b>E-mail:</b> <br>contato@jgdeveloper.com.br</h5> </li>
+
+						</ul>
+					</div>
+					<!-- About Content End -->
+				</div>
+ 
+
+			</div>
+		</div>
+	</section>
+	<!-- About us Section Ends -->
+	
+	<!-- Services Section Starts -->
+	<section class="services" id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Section title start -->
+					<div class="section-title">
+						<h2>Nosso Serviços</h2>
+					</div>
+					<!-- Section title end -->
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-4">
+					<!-- Service Single Start -->
+					<div class="service-single wow fadeInUp" data-wow-delay="0.3s">
+						<div class="icon-box">
+							<i class="flaticon-idea"></i>
+						</div>
+						
+						<h3><b> Web Design</b></h3>
+						<p>Oferecemos serviços de web design para criar sites impressionantes e funcionais.</p>
+						<div class="hover-effect"></div>
+					</div>
+					<!-- Service Single End -->
+				</div>
+				
+				<div class="col-md-4">
+					<!-- Service Single Start -->
+					<div class="service-single wow fadeInUp" data-wow-delay="0.6s">
+						<div class="icon-box">
+							<i class="flaticon-translation"></i>
+						</div>
+						
+						<h3> <b>Web Desenvolvedores</b></h3>
+						<p>Nossos desenvolvedores web especializados podem manter e melhorar seu site de forma eficiente.</p>
+					</div>
+					<!-- Service Single End -->
+				</div>
+				
+				<div class="col-md-4">
+					<!-- Service Single Start -->
+					<div class="service-single wow fadeInUp" data-wow-delay="0.9s">
+						<div class="icon-box">
+							<i class="flaticon-settings"></i>
+
+						</div>
+						
+						<h3> <b>Manuteção</b></h3>
+						<p>
+							Oferecemos manutenção profissional para sites, mantendo-os atualizados e funcionando perfeitamente.
+							
+							
+							
+							
+							</p>
+					</div>
+					<!-- Service Single End -->
+				</div>
+				
+				
+			</div>
+		</div>
+	</section>
+	<!-- Services Section Ends -->
+	
+	<!-- My Resume Section Ends -->
+	
+	<!-- Portfolio Section Starts -->
+	<section class="portfolio" id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Section title start -->
+					<div class="section-title">
+						<h2>Modelos Selecionados</h2>
+						<p>Veja Os Modelos Selecionados</p>
+					</div>
+					<!-- Section title end -->
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Portfolio Filter list start -->
+					<div class="filter-container portfolio-nav">
+						<ul class="list-inline filter">
+							<li><a href="#" class="active-portfolio" data-filter="*">Todos </a></li>
+							<li><a href="#" data-filter=".designing">Provedor de Internet</a></li>
+							<li><a href="#" data-filter=".graphic">Portfolio</a></li>
+							<li><a href="#" data-filter=".websites">Advocacia</a></li>
+						</ul>
+					</div>
+					<!-- Portfolio Filter list End -->
+				</div>
+			</div>
+			
+			<div class="row portfolio-boxes">
+				<!-- Single Portfolio starts -->
+				<div class="col-md-3 col-sm-6 col-xs-12 portfolio-box designing">
+					<div class="single-portfolio">
+						<a href="#popup-1" class="has-popup">
+							<img src="images/portfolio-1.jpg" class="Portfolio Image" alt="" />
+							<div class="single-portfolio-overlay">
+								<h2>Project Title</h2>
+								<h3>Designing</h3>
+							</div>
+						</a>
+					</div>
+					<div id="popup-1" class="popup-box mfp-fade mfp-hide">
+						<div class="content">
+							<div class="image">
+								<img src="images/portfolio-1.jpg" alt="">
+							</div>
+							<div class="desc">
+								<h4>Project Title</h4>
+								<h5><i class="fa fa-folder"></i> Category</h5>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+								</p>
+								<a href="#" class="btn-view-project">View Project</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Single Portfolio Ends -->
+				
+				<!-- Single Portfolio starts -->
+				<div class="col-md-3 col-sm-6 col-xs-12 portfolio-box designing">
+					<div class="single-portfolio">
+						<a href="#popup-2" class="has-popup">
+							<img src="images/portfolio-2.jpg" class="Portfolio Image" alt="" />
+							<div class="single-portfolio-overlay">
+								<h2>Project Title</h2>
+								<h3>Designing</h3>
+							</div>
+						</a>
+					</div>
+					<div id="popup-2" class="popup-box mfp-fade mfp-hide">
+						<div class="content">
+							<div class="image">
+								<img src="images/portfolio-2.jpg" alt="">
+							</div>
+							<div class="desc">
+								<h4>Project Title</h4>
+								<h5><i class="fa fa-folder"></i> Category</h5>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+								</p>
+								<a href="#" class="btn-view-project">View Project</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Single Portfolio Ends -->
+				
+				<!-- Single Portfolio starts -->
+				<div class="col-md-3 col-sm-6 col-xs-12 portfolio-box websites">
+					<div class="single-portfolio">
+						<a href="#popup-3" class="has-popup">
+							<img src="images/portfolio-3.jpg" class="Portfolio Image" alt="" />
+							<div class="single-portfolio-overlay">
+								<h2>Project Title</h2>
+								<h3>Websites</h3>
+							</div>
+						</a>
+					</div>
+					<div id="popup-3" class="popup-box mfp-fade mfp-hide">
+						<div class="content">
+							<div class="image">
+								<img src="images/portfolio-3.jpg" alt="">
+							</div>
+							<div class="desc">
+								<h4>Project Title</h4>
+								<h5><i class="fa fa-folder"></i> Category</h5>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+								</p>
+								<a href="#" class="btn-view-project">View Project</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Single Portfolio Ends -->
+				
+				<!-- Single Portfolio starts -->
+				<div class="col-md-3 col-sm-6 col-xs-12 portfolio-box graphic">
+					<div class="single-portfolio">
+						<a href="#popup-4" class="has-popup">
+							<img src="images/portfolio-4.jpg" class="Portfolio Image" alt="" />
+							<div class="single-portfolio-overlay">
+								<h2>Project Title</h2>
+								<h3>Graphic</h3>
+							</div>
+						</a>
+					</div>
+					<div id="popup-4" class="popup-box mfp-fade mfp-hide">
+						<div class="content">
+							<div class="image">
+								<img src="images/portfolio-4.jpg" alt="">
+							</div>
+							<div class="desc">
+								<h4>Project Title</h4>
+								<h5><i class="fa fa-folder"></i> Category</h5>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+								</p>
+								<a href="#" class="btn-view-project">View Project</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Single Portfolio Ends -->
+				
+				<!-- Single Portfolio starts -->
+				<div class="col-md-3 col-sm-6 col-xs-12 portfolio-box graphic">
+					<div class="single-portfolio">
+						<a href="#popup-5" class="has-popup">
+							<img src="images/portfolio-5.jpg" class="Portfolio Image" alt="" />
+							<div class="single-portfolio-overlay">
+								<h2>Project Title</h2>
+								<h3>Graphic</h3>
+							</div>
+						</a>
+					</div>
+					<div id="popup-5" class="popup-box mfp-fade mfp-hide">
+						<div class="content">
+							<div class="image">
+								<img src="images/portfolio-5.jpg" alt="">
+							</div>
+							<div class="desc">
+								<h4>Project Title</h4>
+								<h5><i class="fa fa-folder"></i> Category</h5>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+								</p>
+								<a href="#" class="btn-view-project">View Project</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Single Portfolio Ends -->
+				
+				<!-- Single Portfolio starts -->
+				<div class="col-md-3 col-sm-6 col-xs-12 portfolio-box designing">
+					<div class="single-portfolio">
+						<a href="#popup-6" class="has-popup">
+							<img src="images/portfolio-6.jpg" class="Portfolio Image" alt="" />
+							<div class="single-portfolio-overlay">
+								<h2>Project Title</h2>
+								<h3>Designing</h3>
+							</div>
+						</a>
+					</div>
+					<div id="popup-6" class="popup-box mfp-fade mfp-hide">
+						<div class="content">
+							<div class="image">
+								<img src="images/portfolio-6.jpg" alt="">
+							</div>
+							<div class="desc">
+								<h4>Project Title</h4>
+								<h5><i class="fa fa-folder"></i> Category</h5>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+								</p>
+								<a href="#" class="btn-view-project">View Project</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Single Portfolio Ends -->
+				
+				<!-- Single Portfolio starts -->
+				<div class="col-md-3 col-sm-6 col-xs-12 portfolio-box graphic">
+					<div class="single-portfolio">
+						<a href="#popup-7" class="has-popup">
+							<img src="images/portfolio-7.jpg" class="Portfolio Image" alt="" />
+							<div class="single-portfolio-overlay">
+								<h2>Project Title</h2>
+								<h3>Graphic</h3>
+							</div>
+						</a>
+					</div>
+					<div id="popup-7" class="popup-box mfp-fade mfp-hide">
+						<div class="content">
+							<div class="image">
+								<img src="images/portfolio-7.jpg" alt="">
+							</div>
+							<div class="desc">
+								<h4>Project Title</h4>
+								<h5><i class="fa fa-folder"></i> Category</h5>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+								</p>
+								<a href="#" class="btn-view-project">View Project</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Single Portfolio Ends -->
+				
+				<!-- Single Portfolio starts -->
+				<div class="col-md-3 col-sm-6 col-xs-12 portfolio-box websites">
+					<div class="single-portfolio">
+						<a href="#popup-8" class="has-popup">
+							<img src="images/portfolio-8.jpg" class="Portfolio Image" alt="" />
+							<div class="single-portfolio-overlay">
+								<h2>Project Title</h2>
+								<h3>Websites</h3>
+							</div>
+						</a>
+					</div>
+					<div id="popup-8" class="popup-box mfp-fade mfp-hide">
+						<div class="content">
+							<div class="image">
+								<img src="images/portfolio-8.jpg" alt="">
+							</div>
+							<div class="desc">
+								<h4>Project Title</h4>
+								<h5><i class="fa fa-folder"></i> Category</h5>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+								</p>
+								<a href="#" class="btn-view-project">View Project</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Single Portfolio Ends -->
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div class="load-more-portfolio">
+						<a href="#" class="" style="border: 1px solid var(--verde-color);color: var(--verde-color);font-weight: bold;font-family: 'Poppins';">Veja Mais Modelos!
+
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Portfolio Section Ends -->
+	
+
+	<!-- Pricing Section Starts -->
+	<!-- <section class="pricing" id="pricing">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+						<h2>Our Pricing</h2>
+						<p>Our Reasonable prices - Lorem ipsum dolor</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-4">
+					<div class="pricing-single wow fadeInUp" data-wow-delay="0.3s">
+						<div class="pricing-header">
+							<div class="icon-box">
+								<i class="flaticon-settings"></i>
+							</div>
+							<h3>Basic</h3>
+							<p>$29 <span>/month</span></p>
+						</div>
+						
+						<div class="pricing-body">
+							<ul>
+								<li>Designing a small brand</li>
+								<li>Redesign the company logo</li>
+								<li>New visual design of the website</li>
+								<li>Deploying a website</li>
+								<li>Studio and product photography</li>
+								<li>Professional project support</li>
+								<li>Support and care</li>
+							</ul>
+						</div>
+						
+						<div class="pricing-footer">
+							<a href="#" class="btn-buynow">Get Started</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="pricing-single wow fadeInUp" data-wow-delay="0.6s">
+						<div class="pricing-header">
+							<span class="recommanded">Featured</span>
+							<div class="icon-box">
+								<i class="flaticon-award"></i>
+							</div>
+							<h3>Standard</h3>
+							<p>$39 <span>/month</span></p>
+						</div>
+						
+						<div class="pricing-body">
+							<ul>
+								<li>Designing a small brand</li>
+								<li>Redesign the company logo</li>
+								<li>New visual design of the website</li>
+								<li>Deploying a website</li>
+								<li>Studio and product photography</li>
+								<li>Professional project support</li>
+								<li>Support and care</li>
+							</ul>
+						</div>
+						
+						<div class="pricing-footer">
+							<a href="#" class="btn-buynow">Get Started</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="pricing-single wow fadeInUp" data-wow-delay="0.9s">
+						<div class="pricing-header">
+							<div class="icon-box">
+								<i class="flaticon-trophy"></i>
+							</div>
+							<h3>Silver</h3>
+							<p>$49 <span>/month</span></p>
+						</div>
+						
+						<div class="pricing-body">
+							<ul>
+								<li>Designing a small brand</li>
+								<li>Redesign the company logo</li>
+								<li>New visual design of the website</li>
+								<li>Deploying a website</li>
+								<li>Studio and product photography</li>
+								<li>Professional project support</li>
+								<li>Support and care</li>
+							</ul>
+						</div>
+						
+						<div class="pricing-footer">
+							<a href="#" class="btn-buynow">Get Started</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!-- Pricing Section Ends -->
+	
+
+	
+	<!-- Newsletter Section Starts -->
+	<!-- <div class="newsletter">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="newsletter-content">
+						<h3>Sign up for Newsletter</h3>
+						<p>Join our subscribers list to get the latest news updates and special offers.</p>
+					</div>
+					
+					<div class="newsletter-form wow fadeInUp">
+						<form action="#" class="form-inline">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Enter your email address">
+								<button type="submit" class="btn-subscribe"><i class="fa fa-paper-plane-o"></i></button>
+							</div>
+						</form>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- Newsletter Section Ends -->
+	
+
+	
+
+	
+	<!-- Contact us Section Starts -->
+	<section class="contactus" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Section title start -->
+					<div class="section-title">
+						<h2>Envie Um E-mail</h2>
+					</div>
+					<!-- Section title end -->
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-8 offset-md-2">
+					<!-- Contact Form start -->
+					<div class="contact-form">
+						<form id="contactForm" action="#" method="post">
+							<div class="row">
+								<div class="form-group col-md-6 col-sm-6">
+									<input type="text" class="form-control" placeholder="Seu Nome">
+								</div>
+								
+								<div class="form-group col-md-6 col-sm-6">
+									<input type="email" class="form-control" placeholder="Seu E-mail">
+								</div>
+								
+								<div class="form-group col-md-12 col-sm-12">
+									<input type="text" class="form-control" placeholder="Assunto">
+								</div>
+								
+								<div class="form-group col-md-12 col-sm-12">
+									<textarea rows="4" class="form-control" placeholder="Mensagem"></textarea>
+								</div>
+								
+								<div class="col-md-12 col-sm-12 text-center">
+									<button type="submit" class="btn-contact" style="width: 80%;border-radius: 15px;font-family: 'Poppins';font-weight: bold;font-size: 18px;">Enviar E-mail</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- Contact Form end -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Contact us Section Ends -->
+	
+	<!-- Contact Information Section Starts -->
+	<div class="contact-information">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<!-- Contact info single start -->
+					<div class="contact-info-single wow fadeInUp" data-wow-delay="0.3s">
+						<h3>Instagram</h3>
+						<h5>jgdeveloper</h5>
+					</div>
+					<!-- Contact info single end -->
+				</div>
+				
+				<div class="col-lg-4">
+					<!-- Contact info single start -->
+					<div class="contact-info-single wow fadeInUp" data-wow-delay="0.6s">
+						<h3>WhatsApp No.</h3>
+						<h5>+55 37 9 9906-6606</h5>
+					</div>
+					<!-- Contact info single end -->
+				</div>
+				
+				<div class="col-lg-4">
+					<!-- Contact info single start -->
+					<div class="contact-info-single wow fadeInUp" data-wow-delay="0.9s">
+						<h3>E-mail</h3>
+						<h5>contato@jgdeveloper.com.br</h5>
+					</div>
+					<!-- Contact info single end -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Contact Information Section Ends -->
+	
+	<!-- Footer Section starts -->
+	<footer class="main-footer text-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Footer Logo start -->
+					<div class="footer-logo">
+						<img src="images/logo-colorida.png" alt="">
+					</div>
+					<!-- Footer Logo end -->
+	
+					<!-- Footer About start -->
+					<div class="footer-about">
+						<p>Somos apaixonados por criar experiências digitais incríveis para nossos clientes. Entre em contato conosco para transformar sua visão em realidade.</p>
+					</div>
+					<!-- Footer About end -->
+	
+					<!-- Footer Social Link start -->
+					<div class="footer-social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+					</div>
+					<!-- Footer Social Link end -->
+	
+					<!-- Footer Copyright start -->
+					<div class="footer-copyright">
+						<p>© Direitos autorais reservados. Desenvolvido por <a href="https://jgdeveloper.com.br/" target="_blank">JG Developer</a>.</p>
+					</div>
+					<!-- Footer Copyright end -->
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- Footer Section Ends -->
+	
+	<!-- Jquery Library File -->
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<!-- Bootstrap js file -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Wow js file -->
+	<script src="js/wow.js"></script>
+	<!-- Swiper Carousel js file -->
+	<script src="js/swiper.min.js"></script>
+	<!-- Counterup js file -->
+	<script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+	<!-- Isotop js file -->
+	<script src="js/isotope.min.js"></script>
+	<!-- Magnific Popup core JS file -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<!-- Slick Nav js file -->
+	<script src="js/jquery.slicknav.js"></script>
+	<!-- SmoothScroll -->
+	<script src="js/SmoothScroll.js"></script>
+	<!-- Animated Headline js file -->
+	<script src="js/animation-headline.js"></script>
+    <!-- Main Custom js file -->
+	<script src="js/function.js"></script>
+</body>
+</html>
