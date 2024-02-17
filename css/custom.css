@@ -23,9 +23,9 @@
 body{
 	font-size: 16px;
 	font-family: 'Roboto', sans-serif;
-	color: #707070;
+	color: #ffffff;
 	    /* Primeiro gradiente */
-		background-image:url(images/bg-about.png);
+		/* background-image:url(images/bg-about.png); */
 		background-attachment: fixed;
 }
 
@@ -298,19 +298,19 @@ header .navbar.sticky-header{
 	display: none;
 	position: absolute;
 	top: 22px;
-	right: 15px;
+	right: 40px;
 }
 
 .navbar-toggle .slicknav_btn{
 	background: none;
-	border: 1px solid #fff;
 	border-radius: 0;
 }
 
 .navbar-toggle .slicknav_icon-bar{
 	background: #fff;
 	box-shadow: none;
-	height: 1px;
+	height:10px;
+	width: 50px;
 	margin-top: 2px;
 	margin-bottom: 4px;
 }
@@ -2289,3 +2289,16 @@ input::placeholder{
 
 
 
+.search {
+    justify-content: center;
+    padding: 15px;
+    display: flex;
+    margin: auto; /* Updated */
+}
+
+.search input {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
